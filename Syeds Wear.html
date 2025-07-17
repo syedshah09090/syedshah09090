@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Syeds FashionWear</title>
+  <link rel="stylesheet" href="Syeds Style.css" />
+  <link rel="stylesheet" href="Syeds Style.java" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">FashionWear</div>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showTab('home')">Home</a></li>
+        <li><a href="#" onclick="showTab('men')">Men</a></li>
+        <li><a href="#" onclick="showTab('women')">Women</a></li>
+        <li><a href="#" onclick="showTab('kids')">Kids</a></li>
+        <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="tab active">
+      <h1>Welcome to FashionWear</h1>
+      <p>Latest trends in clothing, right at your fingertips.</p>
+    </section>
+
+    <section id="men" class="tab">
+      <h2>Men's Collection</h2>
+      <p>Explore jackets, shirts, and more for men.</p>
+    </section>
+
+    <section id="women" class="tab">
+      <h2>Women's Collection</h2>
+      <p>Trendy dresses, tops, and accessories.</p>
+    </section>
+
+    <section id="kids" class="tab">
+      <h2>Kids' Collection</h2>
+      <p>Stylish and comfy clothes for your little ones.</p>
+    </section>
+
+    <section id="contact" class="tab">
+      <h2>Contact Us</h2>
+      <p>Email: support@fashionwear.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FashionWear. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="profile-card">
+    <img src="https://via.placeholder.com/150" alt="My Photo" class="profile-pic" />
+    <h1 class="name">Hassam Shah</h1>
+    <p class="about">
+      Hi! I'm a passionate learner, tech enthusiast, and aspiring developer. I enjoy creating clean, user-friendly web interfaces.
+    </p>
+
+    <button onclick="toggleMore()" class="toggle-btn">Show More</button>
+    
+    <div class="more-info" id="more">
+      <p>I specialize in HTML, CSS, JavaScript, and love working on creative web projects. In my free time, I enjoy reading and gaming.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
